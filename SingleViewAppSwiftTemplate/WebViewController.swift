@@ -19,7 +19,7 @@ class WebViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        webView = WKWebView(frame: view.self)
+        webView = WKWebView(frame: CGRect(x: 0, y: 64, width: 375, height: 603))
         let moreInfoRequest = URLRequest(url: link)
         self.view.addSubview(webView)
         webView.load(moreInfoRequest)
