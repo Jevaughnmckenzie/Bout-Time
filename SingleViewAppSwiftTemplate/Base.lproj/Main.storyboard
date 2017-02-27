@@ -335,6 +335,11 @@
                                     <action selector="goBack:" destination="cJW-FT-1AE" eventType="touchUpInside" id="NHx-3l-rnP"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SdN-cF-sCE">
+                                <rect key="frame" x="0.0" y="66" width="414" height="670"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -346,10 +351,13 @@
                             <constraint firstItem="I8B-jV-RGJ" firstAttribute="leading" secondItem="vPw-1a-Jne" secondAttribute="leading" id="xlQ-Db-Fs3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="webViewContainer" destination="SdN-cF-sCE" id="VNl-dM-F4L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KPr-2P-hPz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="30.434782608695656" y="772.82608695652175"/>
+            <point key="canvasLocation" x="30.434782608695656" y="772.01086956521749"/>
         </scene>
     </scenes>
     <resources>

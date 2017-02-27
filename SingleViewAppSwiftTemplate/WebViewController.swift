@@ -12,6 +12,7 @@ import WebKit
 
 class WebViewController: UIViewController {
     
+    @IBOutlet weak var webViewContainer: UIView!
     
     var webView: WKWebView!
     var link: URL!
@@ -19,7 +20,10 @@ class WebViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        webView = WKWebView(frame: CGRect(x: 0, y: 64, width: 375, height: 603))
+        webView = WKWebView(frame: webViewContainer.frame)
+        
+//        self.webViewContainer = webView
+        
         let moreInfoRequest = URLRequest(url: link)
         self.view.addSubview(webView)
         webView.load(moreInfoRequest)

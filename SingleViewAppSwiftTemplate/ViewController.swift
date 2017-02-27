@@ -317,7 +317,11 @@ class ViewController: UIViewController {
     func countdown() {
         
         timeLeft -= 1
-        timerAndAnswerResult.setTitle("0:\(timeLeft)", for: .normal)
+        if timeLeft >= 10 {
+            timerAndAnswerResult.setTitle("0:\(timeLeft)", for: .normal)
+        } else {
+            timerAndAnswerResult.setTitle("0:0\(timeLeft)", for: .normal)
+        }
         if timeLeft == 0 {
             timer.invalidate()
             checkAnswer()
